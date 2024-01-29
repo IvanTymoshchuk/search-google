@@ -3,21 +3,33 @@
   <head>
     <title>Search</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <ul class="list">
-      <li class="items">
-        <a href="imgSearch.html" class="link">Image Search</a>
-      </li>
-      <li class="items">
-        <a href="globalSearch.html" class="link">Global Search</a>
-      </li>
-    </ul>
-    <h1 class="title">Google</h1>
-    <form action="https://google.com/search" class="form">
-      <input type="text" name="q" class="inputQ" placeholder="Search" />
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end m-4">
+      <a href="imgSearch.html" class="btn btn-primary me-md-2">Image Search</a>
+      <a href="globalSearch.html" class="btn btn-primary">Global Search</a>
+    </div>
 
-      <input type="submit" value="Google Search" class="inputV" />
+    <img src="img/google.png" alt="google" class="mx-auto d-block" />
+
+    <form action="https://google.com/search">
+      <div class="mb-3 d-flex justify-content-center">
+        <input
+          type="text"
+          name="q"
+          class="form-control w-50"
+          placeholder="Search"
+        />
+      </div>
+      <div class="col-1 mx-auto">
+        <input type="submit" value="Search" class="btn btn-primary" />
+      </div>
     </form>
   </body>
 </html>
